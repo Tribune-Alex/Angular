@@ -1,0 +1,138 @@
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .john {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/john.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .winston {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/winston.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .charon {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/charon.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .king {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/king.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .marcus {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/Marcus_Profile.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+}
+
+h2 {
+    color: red;
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .vigo {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/ViggoTarasov.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .caine {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/caine.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .marquis {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/TheMarquisappearance.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+
+    .santino {
+        width: 350px;
+        height: 350px;
+        background-image: url(/img/Santino.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        border: 1px solid white;
+        &:hover{
+             box-shadow: 0 0 50px rgb(255, 111, 0);
+        }
+    }
+}
