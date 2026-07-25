@@ -4,6 +4,8 @@ import { Main } from './main/main';
 import { Footer } from './footer/footer';
 
 
+
+
 @Component({
   selector: 'app-root',
   imports: [Header,Main,Footer],

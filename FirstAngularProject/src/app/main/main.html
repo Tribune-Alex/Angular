@@ -1,16 +1,34 @@
 <h2>Main Characters</h2>
 <div class="section">
-    <div class="john"></div>
-    <div class="winston"></div>
-    <div class="charon"></div>
-    <div class="king"></div>
-    <div class="marcus"></div>
+    @for (character of characters; track character.name) {
+    <div class="card" (click)="open(character)">
+        <img [src]="character.image" [alt]="character.name">
+    </div>
+    }
 </div>
+@if (selectedCharacter) {
+<div class="overlay">
+    <div class="modal">
+        <button (click)="close()">✖</button>
+
+        <img [src]="selectedCharacter.image">
+
+        <h2>{{ selectedCharacter.name }}</h2>
+
+        <p>{{ selectedCharacter.info }}</p>
+    </div>
+</div>
+}
 
 <h2>Antagonists and Rivals</h2>
 <div class="section2">
-    <div class="vigo"></div>
-    <div class="caine"></div>
-    <div class="marquis"></div>
-    <div class="santino"></div>
+    @for (character of antagonists; track character.name) {
+    <div class="card" (click)="open(character)">
+        <img [src]="character.image" [alt]="character.name">
+    </div>
+    }
+</div>
+<h2>Weapons</h2>
+<div class="section3">
+    <app-div></app-div>
 </div>

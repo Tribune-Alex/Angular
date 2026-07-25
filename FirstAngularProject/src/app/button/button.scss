@@ -1,0 +1,11 @@
+.back,.forward{
+    color: white;
+    background-color: black;
+    border: none;
+    width: 55px;
+    border-radius: 15px;
+    margin-top: 10px;
+    &:hover{
+        background-color: red;
+    }
+}
