@@ -1,0 +1,126 @@
+<h1>Students List</h1>
+
+<div class="students">
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Faculty</th>
+                <th>Course</th>
+                <th>Average Grade</th>
+                <th>Grant</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let studen of students; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{studen.FullName}}</td>
+                <td>{{studen.Age}}</td>
+                <td>{{studen.Faculty}}</td>
+                <td>{{studen.Course}}</td>
+                <td>{{studen.AvgGrade}}</td>
+                <td [ngClass]="{'grant': studen.Grants, 'notgrant':!studen.Grants}">{{studen.Grants ? 'Student has 100%
+                    Grant' : 'Not Granted' }}</td>
+                <td [ngClass]="{'status': studen.Active, 'statustwo':!studen.Active}">{{studen.Active ? 'Active': 'Not
+                    Active'}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Students with grade 90 and more</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Faculty</th>
+                <th>Course</th>
+                <th>Average Grade</th>
+                <th>Grant</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (person of students; track person.ID; let i = $index) {
+            @let highScore = person.AvgGrade >= 90;
+
+            @if (highScore) {
+            <tr>
+                <td>{{ i + 1 }}</td>
+                <td>{{ person.FullName }}</td>
+                <td>{{ person.Age }}</td>
+                <td>{{ person.Faculty }}</td>
+                <td>{{ person.Course }}</td>
+                <td>{{ person.AvgGrade }}</td>
+                <td [ngClass]="{'grant': person.Grants, 'notgrant':!person.Grants}">{{person.Grants ? 'Student has 100%
+                    Grant' : 'Not Granted' }}</td>
+                <td [ngClass]="{'status': person.Active, 'statustwo':!person.Active}">{{person.Active ? 'Active': 'Not
+                    Active'}}</td>
+            </tr>
+            }
+            }@empty{
+            <h1>There is no Data</h1>
+            }
+        </tbody>
+    </table>
+
+    <h2>Faculty(Duration of study is 5 years or more)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Title</th>
+                <th>Price per year</th>
+                <th>Duration of study</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of faculty; track item.ID; let i = $index) {
+            @let currentFaculty = item.Duration>=5;
+
+            @if (currentFaculty) {
+            <tr>
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.Title }}</td>
+                <td>{{ item.Price }}</td>
+                <td>{{ item.Duration }}</td>
+
+                <td>
+                    @switch (item.Duration) {
+                    @case (4) {
+                    Bachelor (4 years)
+                    }
+                    @case (5) {
+                    5 years
+                    }
+                    @case (6) {
+                    6 years
+                    }
+                    @case (7) {
+                    7 years
+                    }
+                    @case (10) {
+                    Medical (10 years)
+                    }
+                    @default {
+                    Unknown
+                    }
+                    }
+                </td>
+            </tr>
+            }
+            }@empty{
+            <h1>There is no Data</h1>
+            }
+        </tbody>
+    </table>
+
+
+
+
+
+</div>
