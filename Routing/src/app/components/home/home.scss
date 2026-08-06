@@ -1,0 +1,506 @@
+@font-face {
+  font-family: "Chiro";
+  src: url("/fonts/ChironSungHK-Light.ttf");
+}
+
+@font-face {
+  font-family: "Oxygen";
+  src: url("/fonts/Oxygen-Light.ttf");
+}
+
+@font-face {
+  font-family: "Jose";
+  src: url("/fonts/JosefinSans-Light.ttf");
+}
+
+
+:host {
+  display: block;
+  background-color: #090F15;
+  color: white;
+  font-family: "Chiro";
+}
+
+
+
+
+.header-text {
+  background-color: #090F15;
+  height: 400px !important;
+}
+
+
+.header-image {
+
+  img {
+    object-fit: cover;
+  }
+
+}
+
+
+.ds11 {
+
+  width: 65%;
+
+  font-size: 5rem;
+  padding-top: 150px;
+
+  color: white;
+
+  line-height: 85px;
+  text-align: center;
+
+  word-wrap: break-word;
+
+  animation: chemi_animacia 10s;
+
+}
+
+
+
+@keyframes chemi_animacia {
+
+  from {
+    color:#090F15;
+  }
+
+  to {
+    color:white;
+  }
+
+}
+
+
+
+
+
+
+.container-fluid {
+
+  width:100%;
+  height:auto;
+
+  background-color:#090F15;
+
+  color:white;
+
+}
+
+
+
+.sec {
+
+  font-size:4rem;
+
+}
+
+
+
+.card {
+
+  background-color:transparent;
+
+}
+
+
+
+.stat1 {
+
+  font-size:5rem;
+
+  font-family:"Oxygen";
+
+  text-align:center;
+
+  padding-top:70px;
+
+  font-weight:bold;
+
+  animation: second_animacia 10s;
+
+}
+
+
+
+@keyframes second_animacia {
+
+  from {
+    color:white;
+  }
+
+  to {
+    color:black;
+  }
+
+}
+
+
+
+.stat2 {
+
+  font-size:20px;
+
+  font-family:"Oxygen";
+
+  text-align:center;
+
+  padding-bottom:35px;
+
+  font-weight:bold;
+
+}
+
+
+
+
+
+
+#abus {
+
+
+  .header-text {
+
+    height:100vh !important;
+
+  }
+
+
+}
+
+
+
+.ds44 {
+
+  font-size:4rem;
+
+}
+
+
+
+#atp {
+
+  width:55%;
+
+}
+
+
+
+.atp2 {
+
+  font-size:18px;
+
+}
+
+
+
+#igm1 {
+
+  width:55%;
+
+}
+
+
+
+#hdimg {
+
+
+  img {
+
+    object-fit:cover;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+.acc {
+
+  width:100%;
+
+  height:auto;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  place-content:center;
+
+  background-color:#090F15;
+
+  color:white;
+
+}
+
+
+
+.ds77 {
+
+  font-size:4rem;
+
+  padding-bottom:75px;
+
+}
+
+
+
+.tbl {
+
+  width:90%;
+
+  display:grid;
+
+  grid-template-columns:auto auto;
+
+  grid-template-rows:300px 300px;
+
+  place-content:center;
+
+  margin-top:10px;
+
+  margin-bottom:50px;
+
+}
+
+
+
+.box1 {
+
+
+  text-align:center;
+
+  border:2px solid white;
+
+  padding:100px;
+
+  word-wrap:break-word;
+
+  overflow:auto;
+
+
+}
+
+
+
+.hr1 {
+
+  border-style:dashed;
+
+  border-width:2px;
+
+}
+
+
+
+
+
+
+.tbl2 {
+
+  width:100%;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+}
+
+
+
+.box3,
+.box2 {
+
+  width:100%;
+
+  height:auto;
+
+  background-color:#4971F3;
+
+  color:black;
+
+  overflow:auto;
+
+}
+
+
+
+.box3 {
+
+  text-align:start;
+
+}
+
+
+
+.box2 {
+
+  text-align:center;
+
+  padding-right:50px;
+
+}
+
+
+
+#x1 {
+
+  font-size:3.5rem;
+
+  font-weight:100;
+
+}
+
+
+
+.arrows {
+
+  margin-top:-150px;
+
+  margin-right:70px;
+
+  padding-right:45px;
+
+  margin-bottom:80px;
+
+  width:48%;
+
+}
+
+
+
+.icon {
+
+  margin-top:50px;
+
+  margin-bottom:50px;
+
+  transform:translateX(-250px);
+
+}
+
+
+
+.x2 {
+
+  padding-bottom:25px;
+
+}
+
+
+
+
+
+
+
+
+#wh {
+
+  padding-top:150px;
+
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+  .ds11 {
+
+    font-size:3rem;
+
+    line-height:45px;
+
+    padding-top:80px;
+
+  }
+
+
+
+  .sec {
+
+    font-size:2.5rem;
+
+  }
+
+
+
+  .ds44 {
+
+    font-size:2.5rem;
+
+  }
+
+
+
+  .ds77 {
+
+    font-size:2.5rem;
+
+  }
+
+
+
+  .tbl {
+
+    grid-template-columns:1fr;
+
+    grid-template-rows:auto;
+
+  }
+
+
+
+  .box1 {
+
+    padding:40px 20px;
+
+  }
+
+
+
+  #atp {
+
+    width:100%;
+
+  }
+
+
+
+  #igm1 {
+
+    width:90%;
+
+  }
+
+
+
+  .arrows {
+
+    width:90%;
+
+    margin:20px auto;
+
+    padding:20px;
+
+  }
+
+
+
+  .icon {
+
+    transform:none;
+
+  }
+
+
+
+}

@@ -1,0 +1,121 @@
+
+
+
+#abus {
+  width: 100%;
+  background-color: #090F15;
+  color: white;
+  font-family: "Chiro";
+
+  .row {
+    margin: 0;
+  }
+
+  .header-text {
+    background-color: #090F15;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+
+    .ds44 {
+      font-size: 4rem;
+      text-align: start;
+      padding: 15px;
+      color: white;
+    }
+
+
+    #atp {
+      width: 55%;
+      padding: 15px;
+
+      .atp2 {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        color: white;
+        word-wrap: break-word;
+      }
+    }
+
+
+    #igm1 {
+      width: 55%;
+      padding: 15px;
+      object-fit: cover;
+    }
+  }
+
+
+  .header-image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  
+
+  @media(max-width: 768px){
+
+    .header-text {
+      height: auto;
+      padding: 20px;
+
+
+      .ds44 {
+        font-size: 2.5rem;
+      }
+
+
+      #atp {
+        width: 100%;
+
+        .atp2 {
+          font-size: 1rem;
+        }
+      }
+
+
+      #igm1 {
+        width: 100%;
+      }
+    }
+
+
+    .header-image {
+      height: 50vh;
+    }
+  }
+
+
+
+  
+
+  @media(max-width: 576px){
+
+    .header-text {
+
+      .ds44 {
+        font-size: 2rem;
+      }
+
+
+      #atp {
+        width: 100%;
+      }
+    }
+
+
+    .header-image {
+      height: 40vh;
+    }
+
+  }
+
+}

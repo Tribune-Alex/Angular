@@ -1,0 +1,236 @@
+
+
+.clients-section {
+    background-color: #090F15;
+    padding: 80px 5%;
+}
+
+
+.clients-title {
+    margin-bottom: 60px;
+}
+
+
+#x1 {
+    font-family: "Oxygen";
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+.clients-section .row:first-of-type .col-md-3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 250px;
+
+    border: 1px solid rgba(255,255,255,0.15) !important;
+
+    transition: .4s ease;
+
+    background: rgba(255,255,255,0.02);
+
+
+    &:hover {
+
+        transform: translateY(-10px);
+
+        border-color: #4971F3 !important;
+
+        box-shadow:
+        0 15px 40px rgba(73,113,243,.25);
+
+    }
+
+
+    svg {
+
+        width: 160px;
+        height: 160px;
+
+        opacity: .75;
+
+        transition: .4s ease;
+
+    }
+
+
+    &:hover svg {
+
+        opacity: 1;
+
+        transform: scale(1.1);
+
+    }
+
+}
+
+
+
+
+
+
+
+#wh {
+
+    padding-top: 100px !important;
+
+    padding-bottom: 50px;
+
+}
+
+
+
+#wh h1 {
+
+    font-family:"Oxygen";
+
+    letter-spacing: 4px;
+
+}
+
+
+
+
+
+
+section:last-child .col-md-4 {
+
+    padding: 20px;
+
+
+}
+
+
+
+section:last-child .col-md-4 > div {
+
+
+    width: 80% !important;
+
+    min-height: 300px;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.02)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    border-radius: 15px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+
+
+    transition:.4s ease;
+
+
+    &:hover {
+
+
+        transform:translateY(-12px);
+
+
+        background:
+
+        linear-gradient(
+        145deg,
+        rgba(73,113,243,.25),
+        rgba(255,255,255,.03)
+        );
+
+
+        box-shadow:
+
+        0 20px 50px rgba(0,0,0,.5);
+
+
+    }
+
+
+}
+
+
+
+section:last-child p {
+
+
+    font-family:"Jose";
+
+    font-size:18px;
+
+    line-height:30px;
+
+    color:#E8DFD9;
+
+}
+
+
+
+.hr1 {
+
+    width:60%;
+
+    margin:25px auto;
+
+    border-color:#4971F3;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+    #x1 {
+
+        font-size:2rem;
+
+        text-align:center;
+
+    }
+
+
+    .clients-section {
+
+        padding:50px 20px;
+
+    }
+
+
+    section:last-child .col-md-4 > div {
+
+        width:90% !important;
+
+        margin:auto;
+
+    }
+
+
+}

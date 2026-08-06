@@ -1,0 +1,231 @@
+@font-face {
+
+    font-family:"Jose";
+  
+    src:url("/fonts/JosefinSans-Light.ttf")
+    format("truetype");
+  
+  }
+  
+  
+  
+  footer {
+  
+    width:100%;
+    height:600px;
+  
+    background:#4971F3;
+  
+    overflow:hidden;
+  
+    font-family:"Jose";
+  
+    color:#090F15;
+  
+  }
+  
+  
+  
+  
+  .footer-container {
+  
+  
+    width:100%;
+  
+    height:100%;
+  
+    display:flex;
+  
+    flex-direction:row;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .footer-logo {
+  
+    width:60%;
+  
+    position:relative;
+  
+    padding-top:70px;
+  
+  }
+  
+  
+  
+  .footer-title {
+  
+  
+    font-size:18px;
+  
+    font-weight:bold;
+  
+    margin-left:53px;
+  
+  }
+  
+  
+  
+  .footer-icon {
+  
+  
+    position:absolute;
+  
+    left:-40px;
+  
+    top:120px;
+  
+  
+  }
+  
+  
+  
+  
+  
+ 
+  
+  
+  .footer-info {
+  
+  
+    width:40%;
+  
+    height:450px;
+  
+    margin-top:75px;
+  
+    border-left:2px dotted #090F15;
+  
+    display:flex;
+  
+    flex-direction:column;
+  
+  
+  }
+  
+  
+  
+  
+  .footer-block {
+  
+  
+    width:100%;
+  
+    padding:20px 15px;
+  
+    border-bottom:2px dotted #090F15;
+  
+  
+    font-weight:bold;
+  
+  
+  }
+  
+  
+  
+  .footer-block ul {
+  
+    list-style:none;
+  
+    padding:0;
+  
+    margin:0;
+  
+  }
+  
+  
+  
+  .policy {
+  
+    margin-top:30px !important;
+  
+  }
+  
+  
+  
+  
+  .footer-copy {
+  
+  
+    padding:20px 15px;
+  
+    font-weight:bold;
+  
+  }
+  
+  
+  
+  .link {
+  
+    color:#090F15;
+  
+    font-weight:bold;
+  
+    text-decoration:none;
+  
+  
+    &:hover {
+  
+      text-decoration:underline;
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media(max-width:768px){
+  
+  
+  .footer-container {
+  
+    flex-direction:column;
+  
+  }
+  
+  
+  .footer-logo,
+  .footer-info {
+  
+    width:100%;
+  
+  }
+  
+  
+  .footer-info {
+  
+    border-left:none;
+  
+  }
+  
+  
+  
+  .footer-icon {
+  
+    display:none;
+  
+  }
+  
+  
+  footer {
+  
+   height:auto;
+  
+   padding-bottom:40px;
+  
+  }
+  
+  
+  }

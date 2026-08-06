@@ -1,0 +1,239 @@
+@font-face {
+
+    font-family:"Chiro";
+  
+    src:url("/fonts/ChironSungHK-Light.ttf")
+    format("truetype");
+  
+  }
+  
+  
+  
+  #n1 {
+  
+    width:100%;
+    height:90px;
+    background:#090F15;
+  
+  }
+  
+  
+  
+  .container-fluid {
+  
+    height:100%;
+    display:flex;
+    align-items:center;
+  
+  }
+  
+  
+  
+  
+
+  
+  .navbar-brand {
+  
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+  
+  }
+  
+  
+  
+  .logo-icon {
+  
+    margin-right:15px;
+  
+  }
+  
+  
+  
+  .logo-text {
+  
+    display:flex;
+    flex-direction:column;
+    line-height:1;
+  
+  
+    span {
+  
+      color:white;
+      font-family:"Chiro";
+      font-size:24px;
+  
+    }
+  
+  
+  
+    small {
+  
+      color:white;
+      font-size:14px;
+      margin-left:45px;
+      margin-top:5px;
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .navbar-nav {
+  
+    gap:10px;
+  
+  }
+  
+  
+  
+  .contact-btn {
+  
+  
+    display:block;
+  
+    border:1px solid white;
+  
+    padding:12px 25px;
+  
+    color:white;
+  
+    text-decoration:none;
+  
+    font-size:18px;
+  
+  
+    transition:.3s;
+  
+  
+  
+    &:hover {
+  
+      background:white;
+  
+      color:#090F15;
+  
+    }
+  
+  
+  }
+  
+  
+  
+  
+  .menu-link {
+  
+  
+    color:white;
+  
+    text-decoration:none;
+  
+    font-size:20px;
+  
+    cursor:pointer;
+  
+  
+    &:hover {
+  
+      opacity:.7;
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .navbar-toggler {
+  
+    border:1px solid white;
+  
+  }
+  
+  
+  
+  .navbar-toggler-icon {
+  
+    filter:invert(1);
+  
+  }
+  
+  
+  
+  
+  
+
+  
+  
+  .offcanvas {
+  
+    background:#090F15;
+  
+    color:white;
+  
+  }
+  
+  
+  
+  .offcanvas-title {
+  
+    font-size:30px;
+  
+  }
+  
+  
+  
+  .btn-close {
+  
+    filter:invert(1);
+  
+  }
+  
+  
+  
+  .menu-list {
+  
+  
+    list-style:none;
+  
+    padding:0;
+  
+  
+    li {
+  
+      margin-bottom:25px;
+  
+    }
+  
+  
+  
+    a {
+  
+      color:white;
+  
+      text-decoration:none;
+  
+      font-size:40px;
+  
+  
+      &:hover {
+  
+        color:#4971F3;
+  
+      }
+  
+    }
+  
+  
+  }
